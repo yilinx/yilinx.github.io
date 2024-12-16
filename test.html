@@ -1,27 +1,7 @@
 <html>
 <body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
-    function getItems(url) {
-    $.ajax({
-        url: _spPageContextInfo.webAbsoluteUrl + url,
-        type: "GET",
-        headers: {
-            "accept": "application/json;odata=verbose",
-        },
-        success: function (data) {
-            console.log(data.d.results);
-            console.log(url);
-        },
-        error: function (error) {
-            alert(JSON.stringify(error));
-            console.log(url);
-        }
-    });
-}
-
-var urlForAllItems = "/_api/Web/Lists/GetByTitle('SpTutorial')/Items";
-
-getItems(urlForAllItems);
+    console.log("my testing");
   </script>
 
   <h1>Hello World</h1>
